@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TranformXml" default="TransformAll">
+    <target name="createActiveMQConfig">
+        <!-- Transform one file into an HTML file -->
+        <xslt in="config.xml" out="./result/activemq-test.tmp" style="createActiveMQConfig.xsl" force="true">
+            <classpath location="./lib/SaxonHE9-7-0-8J/saxon9he.jar"/>
+        </xslt>
+    </target>
+    <target name="createZookeeperConfig">
+        <!-- Transform one file into an HTML file -->
+        <xslt in="config.xml" out="./result/zoo-test.tmp" style="createZookeeperConfig.xsl" force="true">
+            <classpath location="./lib/SaxonHE9-7-0-8J/saxon9he.jar"/>
+        </xslt>
+    </target>
+    <target name="createJettyConfig">
+        <!-- Transform one file into an HTML file -->
+        <xslt in="config.xml" out="./result/jetty-test.tmp" style="createJettyConfig.xsl" force="true">
+            <classpath location="./lib/SaxonHE9-7-0-8J/saxon9he.jar"/>
+        </xslt>
+    </target>
+    <target name="deleteFiles">
+        <delete>
+            <fileset dir="./result" includes="**/*.tmp"/>
+        </delete>
+        
+    </target>
+    <target name="cleanAll">
+        <delete>
+            <fileset dir="./result" includes="**/*.*"/>
+        </delete>
+        
+    </target>
+    <target name="TransformAll" depends="cleanAll,createActiveMQConfig,createZookeeperConfig,createJettyConfig, deleteFiles"/>
+</project>
