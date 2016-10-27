@@ -105,18 +105,6 @@
                 <hostname>0.0.0.0</hostname>
                 <port>8161</port>
             </jetty>
-            <zookeeper>
-                <tickTime>2000</tickTime>
-                <initLimit>5</initLimit>
-                <syncLimit>2</syncLimit>
-                <dataDir>/home/srk/working-dir/zook_ivsmq</dataDir>
-                <clientPort>2181</clientPort>
-                <maxClientCnxns>60</maxClientCnxns>
-                <server.1>antwerpen01.mx.ict:2888:3888</server.1>
-                <server.2>antwerpen02.mx.ict:2888:3888</server.2>
-                <server.3>vlissingen01.mx.ict:2888:3888</server.3>
-                <server.4>vlissingen01.mx.ict:2888:3888</server.4>
-            </zookeeper>
         </server>
         <server id="IVS02A" url="antwerpen02.mx.ict">
             <apachemq>
@@ -163,18 +151,6 @@
                 <hostname>0.0.0.0</hostname>
                 <port>8171</port>
             </jetty>
-            <zookeeper>
-                <tickTime>2000</tickTime>
-                <initLimit>5</initLimit>
-                <syncLimit>2</syncLimit>
-                <dataDir>/var/zookeeper/activemq/ivsmq</dataDir>
-                <clientPort>2181</clientPort>
-                <maxClientCnxns>60</maxClientCnxns>
-                <server.1>antwerpen01.mx.ict:2888:3888</server.1>
-                <server.2>antwerpen02.mx.ict:2888:3888</server.2>
-                <server.3>vlissingen01.mx.ict:2888:3888</server.3>
-                <server.4>vlissingen01.mx.ict:2888:3888</server.4>
-            </zookeeper>
         </server>
         <server id="IVS02C" url="vlissingen02.mx.ict">
             <apachemq>
@@ -192,18 +168,6 @@
                 <hostname>0.0.0.0</hostname>
                 <port>8171</port>
             </jetty>
-            <zookeeper>
-                <tickTime>2000</tickTime>
-                <initLimit>5</initLimit>
-                <syncLimit>2</syncLimit>
-                <dataDir>/var/zookeeper/activemq/ivsmq</dataDir>
-                <clientPort>2181</clientPort>
-                <maxClientCnxns>60</maxClientCnxns>
-                <server.1>antwerpen01.mx.ict:2888:3888</server.1>
-                <server.2>antwerpen02.mx.ict:2888:3888</server.2>
-                <server.3>vlissingen01.mx.ict:2888:3888</server.3>
-                <server.4>vlissingen01.mx.ict:2888:3888</server.4>
-            </zookeeper>
         </server>
         <server id="IVS03A" url="vlissingen01.mx.ict">
             <apachemq>
@@ -250,18 +214,6 @@
                 <hostname>0.0.0.0</hostname>
                 <port>8181</port>
             </jetty>
-            <zookeeper>
-                <tickTime>2000</tickTime>
-                <initLimit>5</initLimit>
-                <syncLimit>2</syncLimit>
-                <dataDir>/var/zookeeper/activemq/ivsmq</dataDir>
-                <clientPort>2181</clientPort>
-                <maxClientCnxns>60</maxClientCnxns>
-                <server.1>antwerpen01.mx.ict:2888:3888</server.1>
-                <server.2>antwerpen02.mx.ict:2888:3888</server.2>
-                <server.3>vlissingen01.mx.ict:2888:3888</server.3>
-                <server.4>vlissingen01.mx.ict:2888:3888</server.4>
-            </zookeeper>
         </server>
         <server id="IVS03C" url="antwerpen01.mx.ict">
             <apachemq>
@@ -279,18 +231,6 @@
                 <hostname>0.0.0.0</hostname>
                 <port>8191</port>
             </jetty>
-            <zookeeper>
-                <tickTime>2000</tickTime>
-                <initLimit>5</initLimit>
-                <syncLimit>2</syncLimit>
-                <dataDir>/var/zookeeper/activemq/ivsmq</dataDir>
-                <clientPort>2181</clientPort>
-                <maxClientCnxns>60</maxClientCnxns>
-                <server.1>antwerpen01.mx.ict:2888:3888</server.1>
-                <server.2>antwerpen02.mx.ict:2888:3888</server.2>
-                <server.3>vlissingen01.mx.ict:2888:3888</server.3>
-                <server.4>vlissingen01.mx.ict:2888:3888</server.4>
-            </zookeeper>
         </server>
         <server id="IVS04A" url="vlissingen02.mx.ict">
             <apachemq>
@@ -337,18 +277,6 @@
                 <hostname>0.0.0.0</hostname>
                 <port>8191</port>
             </jetty>
-            <zookeeper>
-                <tickTime>2000</tickTime>
-                <initLimit>5</initLimit>
-                <syncLimit>2</syncLimit>
-                <dataDir>/var/zookeeper/activemq/ivsmq</dataDir>
-                <clientPort>2181</clientPort>
-                <maxClientCnxns>60</maxClientCnxns>
-                <server.1>antwerpen01.mx.ict:2888:3888</server.1>
-                <server.2>antwerpen02.mx.ict:2888:3888</server.2>
-                <server.3>vlissingen01.mx.ict:2888:3888</server.3>
-                <server.4>vlissingen01.mx.ict:2888:3888</server.4>
-            </zookeeper>
         </server>
         <server id="IVS04C" url="antwerpen02.mx.ict">
             <apachemq>
@@ -366,18 +294,6 @@
                 <hostname>0.0.0.0</hostname>
                 <port>8191</port>
             </jetty>
-            <zookeeper>
-                <tickTime>2000</tickTime>
-                <initLimit>5</initLimit>
-                <syncLimit>2</syncLimit>
-                <dataDir>/var/zookeeper/activemq/ivsmq</dataDir>
-                <clientPort>2181</clientPort>
-                <maxClientCnxns>60</maxClientCnxns>
-                <server.1>antwerpen01.mx.ict:2888:3888</server.1>
-                <server.2>antwerpen02.mx.ict:2888:3888</server.2>
-                <server.3>vlissingen01.mx.ict:2888:3888</server.3>
-                <server.4>vlissingen01.mx.ict:2888:3888</server.4>
-            </zookeeper>
         </server>
     </servers>
 
